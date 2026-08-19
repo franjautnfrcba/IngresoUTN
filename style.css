@@ -1,0 +1,309 @@
+:root {
+  --bg-purple: #482353;
+  --bg-card: #562963;
+  --accent-green: #37d699;
+  --accent-pink: #f43f9e;
+  --text-white: #ffffff;
+  --text-muted: #e2d4e6;
+  --font-main: 'Montserrat', sans-serif;
+  --font-script: 'Pacifico', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-purple);
+  font-family: var(--font-main);
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 10px;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 760px;          /* Antes: 480px */
+  background-color: var(--bg-card);
+  border-radius: 32px;       /* Antes: 24px */
+  padding: 55px 40px;        /* Antes: 35px 20px */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+/* Encabezado */
+.header {
+  margin-bottom: 25px;
+}
+
+.logo-utn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.logo-utn i {
+  font-size: 3.5rem;         /* Antes: 2.5rem */
+  color: var(--accent-green);
+}
+
+.logo-text .top {
+  font-size: 1.6rem;         /* Antes: 1.2rem */
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo-text .mid {
+  font-size: 2.4rem;         /* Antes: 1.8rem */
+  font-weight: 900;
+  color: var(--accent-green);
+}
+
+.logo-text .script {
+  font-family: var(--font-script);
+  font-size: 1.6rem;         /* Antes: 1.2rem */
+  color: var(--accent-pink);
+  margin-top: -6px;
+}
+
+/* Secciones y Badges */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 10px 32px;        /* Antes: 8px 24px */
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 1.1rem;         /* Antes: 0.9rem */
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.badge-green {
+  background-color: var(--accent-green);
+  color: #1a4231;
+}
+
+.badge-pink {
+  background-color: var(--accent-pink);
+  color: #ffffff;
+}
+
+.badge-small {
+  font-size: 0.95rem;        /* Antes: 0.75rem */
+  padding: 8px 24px;         /* Antes: 6px 18px */
+}
+
+/* Tipografía */
+.desc {
+  font-size: 1rem;           /* Antes: 0.75rem */
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.desc-small {
+  font-size: 0.95rem;        /* Antes: 0.7rem */
+  font-weight: 600;
+  margin-bottom: 18px;
+  line-height: 1.45;
+}
+
+.desc-tiny {
+  font-size: 0.85rem;        /* Antes: 0.65rem */
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 12px 0;
+}
+
+.highlight-pink {
+  color: var(--accent-pink);
+  font-size: 1rem;           /* Antes: 0.75rem */
+  font-weight: 800;
+  margin: 18px 0;
+  line-height: 1.4;
+}
+
+.title-pink {
+  color: var(--accent-pink);
+  font-size: 1.25rem;        /* Antes: 0.9rem */
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.title-green {
+  color: var(--accent-green);
+  font-size: 1.3rem;         /* Antes: 0.95rem */
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.content-list p, .dates-list p {
+  font-size: 1rem;           /* Antes: 0.75rem */
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 6px 0;
+}
+
+.schedule-box {
+  margin: 14px 0;
+  font-size: 1rem;           /* Antes: 0.75rem */
+  line-height: 1.5;
+}
+
+.info-card-pink {
+  background-color: var(--accent-pink);
+  color: #ffffff;
+  font-size: 0.95rem;        /* Antes: 0.7rem */
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 16px 22px;
+  border-radius: 12px;
+  margin-top: 18px;
+}
+
+.alert-box {
+  border: 2px solid var(--accent-green);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.alert-icon i {
+  font-size: 1.8rem;
+  color: var(--accent-green);
+}
+
+.alert-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.arrow-down {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 15px 0 5px 0;
+}
+
+/* Footer Branding */
+.footer-branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.badge-round {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #3b1744;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.1;
+}
+
+.brand-text span {
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.brand-text .script {
+  font-family: var(--font-script);
+  font-size: 1rem;
+  color: var(--accent-green);
+  font-weight: normal;
+}
+.btn-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #52e5a6;
+  color: #113f2a;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 12px 28px;        /* Antes: 8px 20px */
+  font-weight: 700;
+  font-size: 1rem;           /* Antes: 0.8rem */
+  margin: 10px 0;
+  width: fit-content;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+}
+
+.btn-action i {
+  font-size: 1.3rem;         /* Antes: 1.1rem */
+}
+
+.btn-action small {
+  font-size: 0.85rem;        /* Antes: 0.7rem */
+  display: block;
+}
+.alert-icon i {
+  font-size: 2.4rem;         /* Antes: 1.8rem */
+  color: var(--accent-green);
+}
+
+.alert-text {
+  font-size: 0.95rem;        /* Antes: 0.75rem */
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.badge-round {
+  width: 52px;               /* Antes: 44px */
+  height: 52px;              /* Antes: 44px */
+  border-radius: 50%;
+  background-color: #3b1744;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;         /* Antes: 0.55rem */
+  font-weight: 800;
+  line-height: 1;
+}
+
+.brand-text span {
+  font-weight: 800;
+  font-size: 1rem;           /* Antes: 0.8rem */
+  letter-spacing: 1px;
+}
+
+.brand-text .script {
+  font-family: var(--font-script);
+  font-size: 1.3rem;         /* Antes: 1rem */
+  color: var(--accent-green);
+  font-weight: normal;
+}
